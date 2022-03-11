@@ -180,10 +180,31 @@ img {
 .list__item:hover {
   transform: scale(1.1);
 }
+@media (min-width: 768px) {
+  .list__item--2col {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 .list__heading {
   font-size: 3rem;
   color: var(--primario);
   margin: 0;
+}
+.list__number {
+  font-size: 6rem;
+  margin: 0;
+  color: var(--primario);
+  text-align: center;
+  font-weight: 900;
+  padding: 0 2rem;
+}
+@media (min-width: 768px) {
+  .list__number {
+    font-size: 4rem;
+
+  }
 }
 .list__text {
   margin: 0;
@@ -225,5 +246,30 @@ img {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 5rem;
     align-items: center;
+  }
+}
+/* commissions */
+
+@media (min-width: 768px) {
+  .commissions__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5rem;
+    align-items: flex-end;
+  }
+}
+@media (min-width: 998px) {
+  .commissions__grid {
+    align-items: center;
+  }
+}
+.commissions__text {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .commissions__text {
+    text-align: left;
   }
 }
